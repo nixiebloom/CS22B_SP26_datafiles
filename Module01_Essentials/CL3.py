@@ -20,3 +20,4 @@ print(power3)
 ##### CL3.3: Multiple all the values of the items in a dictionary 
 num_dict = {'num1':100, 'num2':346, 'num3':-24}
 # ** your code **
+mult100 = 
