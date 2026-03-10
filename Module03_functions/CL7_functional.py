@@ -74,6 +74,10 @@ vegfruit = [(1, "zuchinni"), (3, "carrot"), (2, "apple"), (5, "orange"), (4, "ba
 
 #sortedname = sorted()
 #print(sortedname)
+#review key during office hour
+sorted_veg = (vegfruit, reversed==True, key==lambda 2)
+
+print(sorted_veg)
 
 
 ##### CL7.8 Writing functional code with higher order

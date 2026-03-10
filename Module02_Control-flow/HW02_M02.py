@@ -1,5 +1,5 @@
 ### CS 22B Module 02 - Homework 2
-### Name: <Your Name>
+### Name: Skye Gonigan
 
 ##### Homework practicing Control flow and Regular expression #####
 
@@ -23,19 +23,24 @@ lines = [
 ]
 
 ### step 1: Define the count variables
-error_count = re.compile(r"\bERROR\b.*\b(E\d{4})\b")
-#warn_count  = 
-#info_count  = 
+#/b can be used to find whole workds
+error_count = re.compile(r"\bERROR\b")
+warn_count  = re.compile(r"\bWARN\b")
+info_count  = re.compile(r"\bINFO\b")
 
 ### step 2: Initialize the count dictionary 
-#counts = {"ERROR": 0, ...}
+counts = {"ERROR": 0, "WARN": 0, "INFO": 0}
 
 ### step 3: Loop throught the dictionary with if-elif-else
-#for line in lines:
-#    if error_count.search(line):
-#        counts["ERROR"] += 1
-#    elif :
-#    else:
+for line in lines:
+    if error_count.search(line):
+       counts["ERROR"] += 1
+    elif warn_count.search(line):
+        counts["WARN"] += 1
+    elif info_count.search(line):
+        counts["INFO"] += 1
+    else:
+        pass
 
 print(counts)
 
@@ -53,14 +58,21 @@ test_pw = ["Short7!", "LongerPass7!", "GoodPassw0rd!", "Bad Passw0rd!", "N0Symbo
 
 ### step 1: Define variables
 lowercase = re.compile(r"[a-z]")
-#uppercase = 
-#digit_case = 
-#symbol_case = 
-#space_case = 
+uppercase = re.compile(r"[A-Z]")
+digit_case = re.compile(r"7")
+symbol_case = re.compile(r"[!@#$%^&*]")
+space_case = re.compile(r"\S")
+strong = lowercase and uppercase and digit_case and symbol_case and space_case
 
 ### step 2: Write a function that check password (str) to test cases
-def check_password(<arg>):
-    strong = (...)
-    return "STRONG" if strong else "WEAK"
+#def check_password(list):
+for pw in test_pw:
+    if strong and len(pw)>9:
+        print("STRONG")
+    else:
+        print("WEAK")
+       
 
 ### step 3: Use case. Test list test_pw
+
+check_password(test_pw)

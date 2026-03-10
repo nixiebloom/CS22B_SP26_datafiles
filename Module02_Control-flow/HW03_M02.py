@@ -1,5 +1,5 @@
 ### CS 22B Module 02 - Homework 3
-### Name: <Your Name>
+### Name: Skye Gonigan
 
 ##### Homework practicing Control flow #####
 
@@ -14,7 +14,6 @@
 # C. Find the employee with the highest salary in the "Engineering" department, and
 # D. Print a dictionary where the keys are the department names and the values are lists of employee names who belong to the "Excellent" category in each department.
 
-
 employees = [
     {"name": "Alice", "salary": 50000, "department": "Marketing", "performance_scores": [4.0, 4.5, 3.8, 3.2]},
     {"name": "Bob", "salary": 60000, "department": "Engineering", "performance_scores": [4.2, 4.7, 4.1, 4.3]},
@@ -25,26 +24,35 @@ employees = [
     {"name": "Mary Lou Richard", "salary": 55000, "department": "Marketing", "performance_scores": [2.4, 2.2, 3.1, 2.7]}
 ]
 
+
 ### Part A: Calculate the average performance score for each employee
+print(type(employees))
+print(employees["name"])
+
+for e in employees:
+    scores = employees["performance_scores"]
+    average_score = sum(scores) / len(scores)
+    print(f"{employees['name']}: {average_score:.2f}")
 
 
 ### Part B: Classify each employee based on the average performance score and print out the classification for each employee
 ## Let's make this a function so we can reuse it in Part D
-def employee_classification (employees):
-    ec_list = []
-    for e in employees:
+#def employee_classification (employees):
+    #ec_list = []
+    #for e in employees:
+        #print("hi")
     
-ec_list = employee_classification(employees)
+#ec_list = employee_classification(employees)
 
 
 ### Part C. Find the employee with the highest salary in the "Engineering" department, and
-highest_salary = 0
-for e in employees:
-    if e["department"]=="Engineering":
+#highest_salary = 0
+#for e in employees:
+    #if e["department"]=="Engineering":
 
 
 ### Part D. Print a dictionary where the keys are the department names and the values are lists of employee names who belong to the "Excellent" category in each department.
-excellent_emp = {}
-ec_list = employee_classification(employees)
+#excellent_emp = {}
+#ec_list = employee_classification(employees)
 
-for e in ec_list:
+#for e in ec_list:
