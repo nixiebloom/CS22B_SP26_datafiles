@@ -1,4 +1,4 @@
-﻿id,customer,age,product,price,quantity,rating,,
+﻿id,customer,age,product,price,quantity,rating
 T001,Alice Li,25,Laptop,1200,1,4.8
 T002,Bob Dylan,thirty,Mouse,25,5,3.7
 T003,Jo Malone,40,Keyboard,98,3,4.2
