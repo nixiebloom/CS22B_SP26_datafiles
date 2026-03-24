@@ -10,6 +10,7 @@
 # - Includes at least one parameter
 # - Include a docstring and a return statement
 # - Is pure and has no side effects
+# - For each function, provide at least 1 test cases (eg assert) to show that it works correctly.
 
 ##### Function 1: A decision-making function using conditionals #####
 ## Write a Python function that takes input data and returns a transformed version.
